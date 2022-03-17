@@ -148,7 +148,7 @@ option {
     border: .3rem solid var(--sub-bg-color);
     left: 0;
     top: .5rem;
-    background-color: var(--main-bg-color);
+    background-color: transparent;
     transition: all .3s ease-in-out;
 }
 select {
@@ -171,7 +171,25 @@ select {
     position: absolute;
 }
 
-
+.accept__box {
+    padding: 1rem 0;
+    text-align: left;
+}
+.accept__box .text {
+    margin-bottom: 1rem;
+}
+.accept__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 33rem;
+}
+.accept__img {
+    display: block;
+    width: 10rem;
+    height: 8rem;
+    object-fit: contain;
+}
 input:-webkit-autofill,
 textarea:-webkit-autofill,
 select:-webkit-autofill {
@@ -197,7 +215,16 @@ select:-webkit-autofill {
     .orders__table-title {
         font-size: 2.4rem;
     }
-    /* .input-data-box {
-        width: 50%;
-     } */
+    .accept__box {
+        display: flex;
+        align-items: center;
+    }
+    .accept__box .text {
+        margin-bottom: 0;
+        margin-right: 5rem;
+    }
+    .accept__list {
+        flex-grow: 1;
+        max-width: 33rem;
+    }
 }

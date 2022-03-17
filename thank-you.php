@@ -96,6 +96,9 @@ c-431 0 -786 -4 -789 -8 -7 -11 -57 -438 -256 -2182 -403 -3524 -580 -5101
               <div class="block">
                 <h1 class="title">Thank you</h1>
                 <p class="text">Your order was completed successfully!</p>
+                <?php if($_GET["order_id"]){ ?> 
+      <p class="text" style="font-size: 3rem">Your Order ID is: <?php echo htmlspecialchars($_GET["order_id"]); ?></p>
+    <?php } ?>
               </div>
           </div>
         </section>
