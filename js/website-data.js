@@ -17,7 +17,16 @@ let websiteReturnAddress = document.querySelectorAll('.js_website-return-address
 let websiteDescriptor = document.querySelectorAll('.js_website-desc');
 
 
-
+const mainPageTitle = document.querySelector('.js_main-title');
+const mainPageSubTitle = document.querySelector('.js_sub-title');
+const MAIN_TAGLINE = 'Why pay more?';
+const SECONDARY_TAGLINE = 'With us like at home! Your wishes - our concern! Choose in a comfortable environment and at a convenient time.';
+if(mainPageTitle) {
+    mainPageTitle.textContent = MAIN_TAGLINE;
+}
+if(mainPageSubTitle) {
+    mainPageSubTitle.textContent = SECONDARY_TAGLINE;
+}
 
 websiteName = [...websiteName];
 websiteUrl = [...websiteUrl];
