@@ -317,6 +317,8 @@ c-431 0 -786 -4 -789 -8 -7 -11 -57 -438 -256 -2182 -403 -3524 -580 -5101
   <script src="./js/swiper-bundle.min.js"></script>
   <script>
       document.addEventListener("DOMContentLoaded", function(event) {
+
+        console.log(11111)
         
         var swiper = new Swiper(".mySwiper", {
             effect: "coverflow",
@@ -340,11 +342,10 @@ c-431 0 -786 -4 -789 -8 -7 -11 -57 -438 -256 -2182 -403 -3524 -580 -5101
                 slidesPerView: 3,
               },
             }
-      });
-    });
+        });
 
-    
-    var swiper = new Swiper(".mySwiper2", {
+
+        var swiper2 = new Swiper(".mySwiper2", {
             breakpoints: {
               1024: {
                 slidesPerView: 3,
@@ -359,6 +360,24 @@ c-431 0 -786 -4 -789 -8 -7 -11 -57 -438 -256 -2182 -403 -3524 -580 -5101
             prevEl: '.swiper__block .swiper-button-prev',
           },
         });
+    });
+
+    
+    // var swiper2 = new Swiper(".mySwiper2", {
+    //         breakpoints: {
+    //           1024: {
+    //             slidesPerView: 3,
+    //             spaceBetween: 10,
+    //           },
+    //           1440: {
+    //             slidesPerView: 4,
+    //           },
+    //         },
+    //       navigation: {
+    //         nextEl: '.swiper__block .swiper-button-next',
+    //         prevEl: '.swiper__block .swiper-button-prev',
+    //       },
+    //     });
 
   </script>
 </body>

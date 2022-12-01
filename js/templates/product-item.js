@@ -1,6 +1,6 @@
 export const item = (product) => {
   return `
-    <li class="item">
+    <li class="item swiper-slide">
     <div class="product__block js_product glass glass-m" id="${product.id}">
     <div class="product__img-box">
      <img src="${product.image}" alt="" class="img">

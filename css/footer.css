@@ -37,7 +37,7 @@
   display: block;
   width: 3rem;
   margin-right: 1rem;
-  fill: var(--first-brand-color);
+  fill: var(--main-text-color);
 }
 @media screen and (min-width: 1440px)  {
  

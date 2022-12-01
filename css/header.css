@@ -79,7 +79,7 @@ body.open-menu {
 .cart__span-box svg {
     display: block;
     width: 3rem;
-    fill: var(--first-brand-color);
+    fill: var(--main-text-color);
 }
 .cart__span {
     font-family: var(--title-font);
