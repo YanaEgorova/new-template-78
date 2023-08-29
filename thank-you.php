@@ -93,13 +93,14 @@ c-431 0 -786 -4 -789 -8 -7 -11 -57 -438 -256 -2182 -403 -3524 -580 -5101
       <div class="thank-you__wrapper" >
         <section class="thank-you">
           <div class="container">
-              <div class="block">
-                <h1 class="title">Thank you</h1>
-                <p class="text">Your order was completed successfully!</p>
-                <?php if($_GET["order_id"]){ ?> 
-      <p class="text" style="font-size: 3rem">Your Order ID is: <?php echo htmlspecialchars($_GET["order_id"]); ?></p>
-    <?php } ?>
-              </div>
+          <?php if($_GET["order_id"]){ ?> 
+  <h1 class="title">Thank you</h1>
+  <p class="text">Your order was completed successfully!</p>
+  <p class="text" style="font-size: 3rem">Your Order ID is: <?php echo htmlspecialchars($_GET["order_id"]); ?></p>
+<?php } else { ?>
+  <h1 class="title">We're sorry</h1>
+  <p class="text" style="font-size: 3rem">There was an error processing your order</p>
+<?php } ?>
           </div>
         </section>
     </div>
