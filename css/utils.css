@@ -6,6 +6,7 @@ body {
   position: relative;
   min-height: 100vh;
   background-color: var(--third-brand-color);
+  scroll-behavior: smooth;
 }
 *,
 *::before,
